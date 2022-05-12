@@ -1,0 +1,30 @@
+{
+  "name": "996",
+  "version": "0.1.0",
+  "description": "data analysis tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests",
+    "cz": "conventional-changelog -p atom -i CHANGELOG.md -s -r 0 && git add . && git status && git cz",
+    "push": "npm version patch && npm publish . && git push"
+  },
+  "keywords": [
+    "data",
+    "analysis"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kongnet/996.git"
+  },
+  "author": "Sky",
+  "license": "MIT",
+  "devDependencies": {
+    "conventional-changelog": "^3.1.25",
+    "cz-jt": "^0.1.11"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-jt"
+    }
+  }
+}
